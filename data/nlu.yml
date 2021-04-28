@@ -248,6 +248,22 @@ nlu:
     - so saad
     - so sad
 
-
-
-
+- intent: request_wisdom
+  examples: |
+    - tell me a quote
+    - say a saying
+    - proverb
+    - provide wisdom
+    - say something smart
+    - do something random
+    - quote ?
+    - knowledge words
+    - famous saying
+    - random quote
+    - meaningful sentence
+    - any proverb
+    - got an adage
+    - tell me a slogan
+    - tell me a catchphrase
+    - say a catchphrase
+    - say a catchy slogan

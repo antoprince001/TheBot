@@ -9,6 +9,11 @@ intents:
   - mood_unhappy
   - bot_challenge
   - thanks
+  - request_wisdom
+
+
+actions:
+  - action_respond_quote
 
 responses:
   utter_greet:

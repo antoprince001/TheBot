@@ -1,10 +1,10 @@
 [
   {
     "text": "yes thanks",
-    "intent": "thanks",
+    "intent": "affirm",
     "intent_prediction": {
-      "name": "affirm",
-      "confidence": 0.9557547569274902
+      "name": "thanks",
+      "confidence": 0.501180112361908
     }
   }
 ]
