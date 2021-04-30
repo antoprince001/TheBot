@@ -267,3 +267,76 @@ nlu:
     - tell me a catchphrase
     - say a catchphrase
     - say a catchy slogan
+
+- intent: rival_name
+  examples: |
+    - Do you know siri
+    - Hey siri
+    - Ok Google
+    - Alexa Hey
+    - Alexa play a song
+    - Ok Google help me
+    - Do you know Alexa
+    - Are you friends with Alexa
+    - Are you friends with siri
+    - Hey Cortana
+    - Do you know Cortana
+    - Is alexa better than you
+    - IS siri better than you
+    - What would Cortana say
+    - siri is amazing
+    - I prefer Alexa
+    - I prefer siri
+    - Cortana rocks
+
+- intent: find_weather
+  examples: |
+    - Can you tell the weather ?
+    - How is the climate today
+    - Could you tell about the climate
+    - How is the weather today
+    - What can you say about the weather
+    - How does the sky look
+    - weather
+    - climate
+    - atmosphere
+    - how does today look
+    - what do you think of today
+
+- intent: find_weather_for_location
+  examples: |
+    - Can you tell the weather of [London](city)?
+    - How is the climate today in [Chennai](city)
+    - Could you tell about the climate in [Mumbai](city)
+    - How is the weather today in [Paris](city)
+    - What can you say about the weather [Oslo](city)
+    - How does the sky look in [Kolkata](city)
+    - weather [Madrid](city)
+    - [Milan](city) climate 
+    - atmosphere at [Hyderabad](city)
+    - how [Delhi](city) look today 
+    - what is [Bangalore](city) weather
+
+- intent: city_info
+  examples: |
+    - [London](city)
+    - [Berlin](city)
+    - [Glasgow](city)
+    - [Lisbon](city)
+    - [Paris](city)
+    - [Milan](city)
+    - [Sofia](city)
+    - [Madrid](city)
+    - [Oslo](city)
+    - [Chennai](city)
+    - [Hyderabad](city)
+    - [Mumbai](city)
+    - [Bombay](city)
+    - [Kolkata](city)
+    - [Bangalore](city)
+    - [Delhi](city)
+    - [Madras](city)
+
+
+
+  

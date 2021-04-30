@@ -89,3 +89,22 @@ stories:
       are you a bot?
     intent: bot_challenge
   - action: utter_iamabot
+
+
+- story: ask for weather short path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: find_weather
+  - action: utter_ask_location
+  - intent: city_info
+  - action: utter_finding_weather
+  - action: action_find_and_show_weather
+
+- story: ask for weather long path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: find_weather_for_location
+  - action: utter_finding_weather
+  - action: action_find_and_show_weather

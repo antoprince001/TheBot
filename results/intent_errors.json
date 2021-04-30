@@ -4,7 +4,7 @@
     "intent": "affirm",
     "intent_prediction": {
       "name": "thanks",
-      "confidence": 0.501180112361908
+      "confidence": 0.8905311226844788
     }
   }
 ]

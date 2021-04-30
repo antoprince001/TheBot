@@ -50,3 +50,46 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
+
+
+- story: rival path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: rival_name
+  - action: utter_rival_reply
+
+- story: rival path 2
+  steps:
+  - intent: rival_name
+  - action: utter_rival_reply
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+
+
+- story: ask for weather short path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: find_weather
+  - action: utter_ask_location
+  - intent: city_info
+  - slot_was_set:
+    - city
+  - action: utter_finding_weather
+  - action: action_find_and_show_weather
+
+- story: ask for weather long path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: find_weather_for_location
+  - slot_was_set:
+    - city
+  - action: utter_finding_weather
+  - action: action_find_and_show_weather
+
+
+
+
+

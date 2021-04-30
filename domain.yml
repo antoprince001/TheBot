@@ -10,14 +10,27 @@ intents:
   - bot_challenge
   - thanks
   - request_wisdom
+  - rival_name
+  - find_weather
+  - find_weather_for_location
+  - city_info
 
+entities:
+  - city
+
+slots:
+  city:
+    type: text
 
 actions:
   - action_respond_quote
+  - action_find_and_show_weather
 
 responses:
   utter_greet:
   - text: "Hey! How are you?"
+  - text: "Hey!"
+  - text: "Hello"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -31,12 +44,24 @@ responses:
 
   utter_goodbye:
   - text: "Bye"
-
+  - text: "Goodbye.."
+  
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
   utter_welcome:
   - text: "Always happy to help"
+
+  utter_rival_reply:
+  - text: "I thought we were friends !"
+    image: "https://memegenerator.net/img/instances/70626667/why-did-you-say-that-name.jpg"
+
+  utter_ask_location:
+  - text: "I can find the weather for cities. Which city do you need the weather data?"
+
+  utter_finding_weather:
+  - text: "Ok, give me a second to look up the weather of {city}"
+
 
 session_config:
   session_expiration_time: 60
