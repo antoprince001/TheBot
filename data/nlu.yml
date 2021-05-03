@@ -338,5 +338,29 @@ nlu:
     - [Madras](city)
 
 
-
+- intent: request_joke
+  examples: |
+    - tell me a joke
+    - say something funny
+    - joke
+    - provide joke
+    - say something humorous
+    - do something random
+    - humor me
+    - funny words
+    - comedy
+    - random joke
+    - meaningful yet funny
+    - any joke
+    - got an joke
+    - tell me something funny
+    - tell me a comedic sentence
+    - say a joke
+    - say a funny thing
+    - A joke please
+    - Can you tell jokes?
+    - I would like to hear a joke
+    - I would loke to hear a joke, please
+    - Please tell me something funny
+    - do something fun
   

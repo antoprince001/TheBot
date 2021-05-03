@@ -65,3 +65,29 @@ class ActionFindAndShowWeather(Action):
         dispatcher.utter_message(text=output)
 
         return []
+
+
+class ActionRespondJoke(Action):
+
+    def name(self) -> Text:
+        return "action_respond_joke"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+        headers = {
+            'Accept': 'application/json'
+        }
+        response = requests.get('https://official-joke-api.appspot.com/random_joke', headers=headers)
+
+        if response.status_code == 200:
+            datum =  json.loads(response.content.decode('utf-8'))
+            setup = datum['setup']
+            punchline = datum['punchline']
+            joke = 'Here is a Joke' + '\n' + setup + '\n' + punchline
+        else:
+            joke = "A joke"
+        dispatcher.utter_message(text=joke)
+
+        return []

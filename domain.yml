@@ -14,6 +14,7 @@ intents:
   - find_weather
   - find_weather_for_location
   - city_info
+  - request_joke
 
 entities:
   - city
@@ -25,6 +26,7 @@ slots:
 actions:
   - action_respond_quote
   - action_find_and_show_weather
+  - action_respond_joke
 
 responses:
   utter_greet:

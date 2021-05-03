@@ -48,8 +48,8 @@ stories:
   - intent: request_wisdom
   - action: action_respond_quote
   - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - intent: deny
+  - action: utter_goodbye
 
 
 - story: rival path 1
@@ -89,6 +89,25 @@ stories:
   - action: utter_finding_weather
   - action: action_find_and_show_weather
 
+- story: joke path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: request_joke
+  - action: action_respond_joke
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: quote path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: request_joke
+  - action: action_respond_joke
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
 
 
 
