@@ -7,6 +7,7 @@
 from typing import Any, Text, Dict, List
 import json
 import requests
+from newsapi import NewsApiClient
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
@@ -89,5 +90,31 @@ class ActionRespondJoke(Action):
         else:
             joke = "A joke"
         dispatcher.utter_message(text=joke)
+
+        return []
+
+class ActionFindAndShowNews(Action):
+
+    def name(self) -> Text:
+        return "action_find_and_show_news"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        topic_name = tracker.get_slot("topic")
+        newsapi_apikey = '01dd9bdbb831421da729c605300ec9e2'
+        newsapi = NewsApiClient(api_key=newsapi_apikey)
+        
+        top_headlines=newsapi.get_everything(q=topic_name,page=1)
+        if(top_headlines['totalResults']>0):
+            news = top_headlines['articles'][0]  
+            datum = news["title"]
+            link = news["url"]
+        else:
+            datum = 'I m sorry ! I was not able to find the news data'
+            link = ''
+        
+        dispatcher.utter_message(text=datum,attachment =link)
 
         return []

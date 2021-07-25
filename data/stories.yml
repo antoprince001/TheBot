@@ -109,6 +109,27 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
+- story: ask for news  path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: find_news
+  - action: utter_ask_topic
+  - intent: topic_info
+  - slot_was_set:
+    - topic
+  - action: utter_finding_news
+  - action: action_find_and_show_news
+
+- story: ask for news  path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: find_news_for_topic
+  - slot_was_set:
+    - topic
+  - action: utter_finding_news
+  - action: action_find_and_show_news
 
 
 

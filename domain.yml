@@ -15,18 +15,25 @@ intents:
   - find_weather_for_location
   - city_info
   - request_joke
+  - find_news
+  - find_news_for_topic
+  - topic_info
 
 entities:
   - city
+  - topic
 
 slots:
   city:
+    type: text
+  topic:
     type: text
 
 actions:
   - action_respond_quote
   - action_find_and_show_weather
   - action_respond_joke
+  - action_find_and_show_news
 
 responses:
   utter_greet:
@@ -63,6 +70,12 @@ responses:
 
   utter_finding_weather:
   - text: "Ok, give me a second to look up the weather of {city}"
+
+  utter_finding_news:
+  - text: "Ok, give me a second to look up the headlines for {topic}"
+
+  utter_ask_topic:
+  - text: "I can find the news for any topic. For which topic, do you need the headlines?"
 
 
 session_config:

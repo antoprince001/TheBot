@@ -363,4 +363,54 @@ nlu:
     - I would loke to hear a joke, please
     - Please tell me something funny
     - do something fun
-  
+
+- intent: find_news
+  examples: |
+    - current utter_finding_news ?
+    - How is the news today
+    - tell about the recent trends
+    - information on world news
+    - What can you say about the current scenario
+    - How does the world look
+    - news
+    - information
+    - current updates
+    - how does recent trends look
+    - what do you think of news
+
+- intent: find_news_for_topic
+  examples: |
+    - news about [blockchain](topic)?
+    - How is the [olympics](topic)
+    - Could you tell about [technology](topic)
+    - How is the situation today in [military](topic)
+    - What can you say about the [corona](topic)
+    - How does the current trend in [covid](topic)
+    - news on [jobs](topic)
+    - [india](topic) news 
+    - prospects of [engineering](topic)
+    - how [artificial intelligence](topic) look today 
+    - what is [chennai](topic) news
+    - recent updates on [rain](topic)
+
+- intent: topic_info
+  examples: |
+    - [blockchain](topic)
+    - [sports](topic)
+    - [olympics](topic)
+    - [technology](topic)
+    - [military](topic)
+    - [government](topic)
+    - [covid](topic)
+    - [corona](topic)
+    - [international](topic)
+    - [state](topic)
+    - [chennai](topic)
+    - [Gate exam]](topic)
+    - [engineering](topic)
+    - [career](topic)
+    - [jobs](topic)
+    - [india](topic)
+    - [rain](topic)
+    - [artificial intelligence](topic)
+
