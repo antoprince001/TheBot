@@ -9,7 +9,6 @@ stories:
   - intent: mood_great
   - action: utter_happy
 
-  
 - story: sad path 1
   steps:
   - intent: greet
@@ -130,6 +129,28 @@ stories:
     - topic
   - action: utter_finding_news
   - action: action_find_and_show_news
+
+- story: ask for wiki  path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: find_wiki
+  - action: utter_ask_query
+  - intent: topic_info
+  - slot_was_set:
+    - topic
+  - action: utter_finding_query
+  - action: action_find_and_show_wiki
+
+- story: ask for wiki  path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: find_wiki_for_topic
+  - slot_was_set:
+    - topic
+  - action: utter_finding_query
+  - action: action_find_and_show_wiki
 
 
 

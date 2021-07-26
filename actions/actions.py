@@ -7,8 +7,9 @@
 from typing import Any, Text, Dict, List
 import json
 import requests
+import wikipedia 
 from newsapi import NewsApiClient
-
+from actions.azureTranslate import translate
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
@@ -32,7 +33,7 @@ class ActionRespondQuote(Action):
             datum =  json.loads(response.content.decode('utf-8'))
             quote = datum['content']
         else:
-            quote = "Fake it till you make it"
+            quote = "யாதும் ஊரே யாவரும் கேளிர்"
         dispatcher.utter_message(text=quote)
 
         return []
@@ -59,9 +60,9 @@ class ActionFindAndShowWeather(Action):
         if weather["cod"] != "404": 
             datum = weather["main"]
             celsius = str(int(datum['temp'])-273) + ""
-            output = 'Current weather is ' + weather['weather'][0]['description'] + ' with temperature of '+celsius+'° Celsius'
+            output = 'தற்போதைய வானிலை ' + translate(weather['weather'][0]['description']) + ' வெப்பநிலை '+celsius+'° Celsius'
         else:
-            output = 'I m sorry ! I was not able to find the weather data'
+            output = 'என்னை மன்னிக்கவும் ! என்னால் வானிலை தரவை கண்டுபிடிக்க முடியவில்லை'
         
         dispatcher.utter_message(text=output)
 
@@ -84,11 +85,11 @@ class ActionRespondJoke(Action):
 
         if response.status_code == 200:
             datum =  json.loads(response.content.decode('utf-8'))
-            setup = datum['setup']
-            punchline = datum['punchline']
-            joke = 'Here is a Joke' + '\n' + setup + '\n' + punchline
+            setup = translate(datum['setup'])
+            punchline = translate(datum['punchline'])
+            joke = 'இங்கே ஒரு நகைச்சுவை' + '\n' + setup + '\n' + punchline
         else:
-            joke = "A joke"
+            joke = "நகைச்சுவை"
         dispatcher.utter_message(text=joke)
 
         return []
@@ -109,12 +110,37 @@ class ActionFindAndShowNews(Action):
         top_headlines=newsapi.get_everything(q=topic_name,page=1)
         if(top_headlines['totalResults']>0):
             news = top_headlines['articles'][0]  
-            datum = news["title"]
+            datum = translate(news["title"])
             link = news["url"]
         else:
-            datum = 'I m sorry ! I was not able to find the news data'
+            datum = 'என்னை மன்னிக்கவும் ! செய்தித் தரவை என்னால் கண்டுபிடிக்க முடியவில்லை'
             link = ''
         
         dispatcher.utter_message(text=datum,attachment =link)
+
+        return []
+
+class ActionFindAndShowWiki(Action):
+
+    def name(self) -> Text:
+        return "action_find_and_show_wiki"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query = tracker.get_slot("topic")
+        
+        try:
+            if(query != None):
+                result = 'Acccording to wikipedia,'+ wikipedia.summary(query, sentences=2)
+                datum = translate(result)
+            else:
+                result = 'Try again'
+                datum = translate(result)
+        except:
+            datum = 'மன்னிக்கவும் ! இப்போது தகவலைக் கண்டுபிடிக்க முடியவில்லை'
+        finally:
+            dispatcher.utter_message(text=datum)
 
         return []

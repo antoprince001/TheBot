@@ -18,6 +18,8 @@ intents:
   - find_news
   - find_news_for_topic
   - topic_info
+  - find_wiki
+  - find_wiki_for_topic
 
 entities:
   - city
@@ -34,48 +36,55 @@ actions:
   - action_find_and_show_weather
   - action_respond_joke
   - action_find_and_show_news
+  - action_find_and_show_wiki
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
-  - text: "Hey!"
-  - text: "Hello"
+  - text: "வணக்கம்! எப்படி இருக்கிறீர்கள்?"
+  - text: "வணக்கம்!"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
+  - text: "உங்களை உற்சாகப்படுத்த வேண்டிய ஒன்று இங்கே:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+  - text: "அது உங்களுக்கு உதவியதா?"
 
   utter_happy:
-  - text: "Great, carry on!"
+  - text: "சிறந்தது, தொடருங்கள்!"
 
   utter_goodbye:
-  - text: "Bye"
-  - text: "Goodbye.."
-  
+  - text: "வருகிறேன்"
+  - text: "பிரியாவிடை.."
+  - text: "மீண்டும் சந்திப்போம்"
+
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "நான் ஒரு உதவியாளர், powered by Rasa."
 
   utter_welcome:
-  - text: "Always happy to help"
+  - text: "நான் எப்போதும் உதவ மகிழ்ச்சியாக இருக்கிறேன்"
 
   utter_rival_reply:
-  - text: "I thought we were friends !"
+  - text: "நாம் நண்பர்கள் என்று நினைத்தேன்"
     image: "https://memegenerator.net/img/instances/70626667/why-did-you-say-that-name.jpg"
 
   utter_ask_location:
-  - text: "I can find the weather for cities. Which city do you need the weather data?"
+  - text: "நகரங்களுக்கான வானிலை என்னால் கண்டுபிடிக்க முடியும். எந்த நகரத்திற்கு வானிலை தரவு தேவை?"
 
   utter_finding_weather:
-  - text: "Ok, give me a second to look up the weather of {city}"
+  - text: "சரி,  {city} வானிலை பார்க்க எனக்கு ஒரு நொடி கொடுங்கள்"
 
   utter_finding_news:
-  - text: "Ok, give me a second to look up the headlines for {topic}"
+  - text: "சரி, {topic}க்கான தலைப்புச் செய்திகளைக் காண எனக்கு ஒரு நொடி கொடுங்கள்"
 
   utter_ask_topic:
-  - text: "I can find the news for any topic. For which topic, do you need the headlines?"
+  - text: "எந்தவொரு தலைப்புக்கும் நான் செய்திகளைக் கண்டுபிடிக்க முடியும். எந்த தலைப்புக்கு, உங்களுக்கு செய்திகள் தேவை?"
+
+  utter_ask_query:
+  - text: "எந்தவொரு  தலைப்புக்கும் நான் தகவல்கள் கண்டுபிடிக்க முடியும். எந்த தலைப்புக்கு, உங்களுக்கு தகவல்கள் தேவை?"
+
+  utter_finding_query:
+  - text: "சரி, {topic}க்கான தகவல்கள் காண எனக்கு ஒரு நொடி கொடுங்கள்"
 
 
 session_config:

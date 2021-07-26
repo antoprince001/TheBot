@@ -3,62 +3,37 @@ version: "2.0"
 nlu:
 - intent: greet
   examples: |
-    - hey
-    - hello
-    - hi
-    - good morning
-    - good evening
-    - hey there
-    - hi there
-    - hello there
-    - greetings
-    - Hi
-    - helo
-    - Hi!
-    - Hi'
-    - Hi,
-    - Hi, bot
-    - Hieee
-    - Hieeeeeeeeeeeee
-    - Hola
-    - What is up?
-    - Whats up
-    - Whats up my bot
-    - Whats up?
-    - ayyyy whaddup
-    - bonjour
-    - ey boss
-    - I said, helllllloooooO
-    - Well hello there
+    - வணக்கம்'
+    - வணக்கம்
+    - ஹலோ 
+    - ஹலோ !!
+    - வணக்கம் !
+    - வணக்கம்ம்ம்ம்ம்
+    - காலை வணக்கம்
+    - மாலை வணக்கம் 
+    - வணக்கம் நண்பர்
+    - வாழ்த்துக்கள்
+    - என்ன இருக்கிறது?
+    - என்ன விஷயம்
+    - என்ன விஷயம் போட்
+    - நான் உங்களுக்கு வணக்கம் சொன்னேன்
+    - சரி வணக்கம்
 
 - intent: goodbye
   examples: |
+    - வருகிறேன்
+    - பிரியாவிடை
+    - பிறகு சந்திப்போம்
+    - பின்னர் சந்திப்போம்
+    - விடைபெறுகிறேன்
+    - தற்காலிகமாக விடைபெறுகிறேன்
+    - பின்னர் உரையாடுவோம்
+    - வருகிறேன் வருகிறேன்
+    - வருகிறேன் வருகிறேன் நண்பர்
+    - உங்களுடன் பேசுவது நன்றாக இருந்தது
+    - உன்னை பிறகு சந்திக்கிறேன்
     - bye
-    - goodbye
-    - see you around
-    - see you later
-    - see ya
-    - buh bye
-    - Bye
-    - Bye bye
-    - adios
-    - adios?
-    - bye :P
-    - bye bot
-    - bye bye
-    - bye bye bot
-    - bye for now
-    - bye udo
-    - bye was nice talking to you
-    - bye!
-    - byee
-    - catch you later
-    - ciao
-    - cya
-    - farewell
-    - good bye
-    - good bye rasa bot!
-    - good night
+    - இனிய இரவு
     - goodbye
     - goodbye.
     - goodnight
@@ -67,255 +42,195 @@ nlu:
     - ok bye
     - ok, bye
     - ok.bye
-    - see u later
-    - see ya
-    - see you
-    - see you . bye
-    - take care
-    - then bye
-    - tlak to you later
-    - toodle-oo
-    - byr
+    - பின்னர் சந்திப்போம். வருகிறேன்
+    - உங்களை பார்த்து கொள்ளுங்கள்
+
+
 
 - intent: thanks
   examples: |
-    - thanks!
-    - thank you
-    - thanks a lot
-    - great thanks
-    - appreciate it
-    - cool thanks
-    - Cool. Thanks
-    - Great, thanks
-    - Thank you so much
-    - Thank's!
-    - Thanks bot
-    - Thanks for that
-    - Thanks!
-    - amazing, thanks
-    - cool thank you
-    - cool, thanks
-    - danke
-    - great thanks
-    - ok thanks
-    - ok thanks
-    - ok thanks!
-    - perfect thank you
-    - thank u
-    - thank you
-    - thank you anyways
+    - நன்றி!
+    - மிக்க நன்றி 
+    - கேட்டதற்கு நன்றி
     - thanks
-    - thanks a bunch for everything
-    - thanks a lot
-    - thanks for the help
-    - thanks you
-    - thanks!
-    - thankyou
-    - thnks
-    - thx
-    - yes thanks
-    - thanks for your information
-    - thanks f
+    - அதை மிகவும் பாராட்டுகிறேன்
+    - அதற்கு நன்றி
+    - பெரிய நன்றி
+    - சரி நன்றி
+    - சரி நன்றி!
+    - சரியான நன்றி
+    - உதவிக்கு நன்றி
+    - ஆம் நன்றி
+    - தகவல் கொடுத்தமைக்கு நன்றி
 
 - intent: bot_challenge
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
-    - you are a bot right
-    - aren't you a bot
-    - Are you a bot?
-    - are you a BOT
-    - are you a bot?
-    - are you a chatbot
-    - are you a rasa bot?
-    - are you a real bot?
-    - are you a robot
-    - are you ai
-    - are you artificial
-    - are you artificial intelligence
-    - are you bot
-    - are you bot?
-    - are you rasa bot?
-    - are you real
-    - are you real lol
-    - are you really a bot
-    - are you robot
-    - are you sure that you're a bot?
-    - bot?
-    - cuz you are a bot
-    - i guess you are a chatbot
-    - oh are you chatbot?
-    - tell me, are you a bot?
-    - what are you, a bot?
-    - you are a robot
-    - you are ai
-    - you are chatbot
-    - you're a bot
-    - you robo
-    - real bot then?
-    - are you really a bbot?
+    - யார் நீ
+    - நீங்கள் ஒரு கணினியா?'
+    - நீங்கள் ஒரு மனிதரா?
+    - நீங்கள் ஒரு செயற்கை நுண்ணறிவு ஆ?
+    - நான் ஒரு சாட்போட்டுடன் பேசுகிறேனா?
+    - நான் ஒரு மனிதனுடன் பேசுகிறேனா?
+    - நீங்கள் ஒரு சாட்போட் ஆ
+    - நீங்கள் ஒரு ரோபோ ஆ
+    - நீங்கள் செயற்கை இயந்திரமா?
+    - நீங்கள் உண்மையானவரா?
+    - நீங்கள் ஒரு போட் என்று உறுதியாக இருக்கிறீர்களா?
+    - போட்?
+    - ஏனெனில் நீங்கள் ஒரு போட்
+    - நீங்கள் ஒரு சாட்போட் என்று நினைக்கிறேன்
+    - நீங்கள் என்ன, ஒரு சாட்போட் ஆ?
+
 
 - intent: affirm
   examples: |
-    - yes
-    - yes please
-    - yes I would
-    - please do
-    - yup
-    - yep
-    - that's right
-    - indeed
-    - Yes, please
-    - yeah
-    - sure
-    - yes thanks
-    - That would be great
-    - YES
-    - YUP
-    - Yea
-    - Yeah
-    - Yeah sure
-    - Yep
-    - Yep that's fine
-    - Yep!
-    - Yepp
-    - Yes
-    - Yes I do
-    - Yes please
-    - Yes please!
-    - Yes, I accept
+    - ஆம்
+    - ஆமாம் தயவு செய்து
+    - ஆம் நான் அதை செய்வேன்
+    - தயவுசெய்து செய்யுங்கள்
+    - அது சரி
+    - ஆம் உண்மையாக
+    - நிச்சயமாக
+    - நிச்சயம்
+    - ஆம் நன்றி
+    - அது நன்றாக இருக்கும்
+    - ஆம் நிச்சயமாக
+    - ஆம் அது நல்லது
+    - ஆம் நான் செய்கிறேன்
+    - ஆம் நான் செய்வேன்
+    - ஆமாம் தயவு செய்து
+    - ஆம், நான் ஏற்றுக்கொள்கிறேன்
     
 - intent: deny
   examples: |
-    - no
-    - nope
-    - no thanks
-    - not that one
-    - don't use that
-    - please no
-    - no don't do that
-    - no, use abraham.lincoln@example.com
-    - Neither
-    - Never
-    - Nevermind
-    - No thank you
-    - No, not really.
-    - No, thank you
-    - No.
-    - Nopes
-    - Not really
-    - absolutely not
-    - decline
-    - definitely not
-    - deny
-    - na
-    - nah
-    - nah I'm good
+    - இல்லை
+    - இல்லை நன்றி 
+    - எதுவும் இல்லை
+    - அது ஒன்றுமில்லை
+    - அதைப் பயன்படுத்த வேண்டாம்
+    - தயவு செய்து வேண்டாம்
+    - இல்லை அதை செய்ய வேண்டாம்
+    - ஒருபோதும் இல்லை
+    - கருத்தில் கொள்ளாதே
+    - பரவாயில்லை, நன்றி
+    - உண்மையில் இல்லை.
+    - இல்லை, உண்மையில் இல்லை.
+    - முற்றிலும் இல்லை
+    - மறுக்கப்பட்டது
+    - மறுக்கவும்
+    - நிச்சயமாக இல்லை
+    - அதை மறுக்கவும்
+
 
 - intent: mood_great
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - சரியானது
+    - நன்று
+    - ஆச்சரியமாக இருக்கிறது
+    - ஒரு ராஜா போல உணர்கிறேன்
+    - ஒரு ராணி போல் உணர்கிறேன்
+    - அற்புதம்
+    - ஒரு இளவரசன் போல உணர்கிறேன்
+    - ஒரு இளவரசி போல் உணர்கிறேன்
+    - நான் மிகவும் நன்றாக உணர்கிறேன்
+    - நான் சிறந்தவன்
+    - நான் ஆச்சரியப்படுகிறேன்
+    - நான் உலகைக் காப்பாற்றப் போகிறேன்
+    - சூப்பர் ஸ்டோக்
+    - மிகவும் நல்லது
+    - மிகவும் சரியானது
+    - மிகச்சரி
 
 - intent: mood_unhappy
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - இன்று பயங்கரமான நாள்
+    - இன்று மோசமான நாள்
+    - நான் சோகமாக உள்ளேன்
+    - எனக்கு நன்றாகத் தெரியவில்லை
+    - நான் ஏமாற்றமடைகிறேன்
+    - சூப்பர் சோகம்
+    - நான் மிகவும் சோகமாக இருக்கிறேன்
+    - சோகம்
+    - மிகவும் சோகம்
+    - மோசமான
+    - மிகவும் மோசமான
+    - மகிழ்ச்சியற்றது
+    - நல்லதல்ல
+    - மிகவும் நன்றாக இல்லை
+    - மிகவும் வருத்தமாக இருக்கிறது
+    - வருத்தமாக இருக்கிறது
 
 - intent: request_wisdom
   examples: |
-    - tell me a quote
-    - say a saying
-    - proverb
-    - provide wisdom
-    - say something smart
-    - do something random
-    - quote ?
-    - knowledge words
-    - famous saying
-    - random quote
-    - meaningful sentence
-    - any proverb
-    - got an adage
-    - tell me a slogan
-    - tell me a catchphrase
-    - say a catchphrase
-    - say a catchy slogan
+    - ஒரு மேற்கோளைச் சொல்லுங்கள்
+    - ஒரு சொல் சொல்லுங்கள்
+    - பழமொழி
+    - ஒரு பழமொழி சொல்லுங்கள்
+    - ஞானத்தை வழங்குங்கள்
+    - புத்திசாலித்தனமாக ஏதாவது சொல்லுங்கள்
+    - சீரற்ற ஏதாவது செய்யுங்கள்
+    - மேற்கோள் ?
+    - அறிவு சொற்கள்
+    - பிரபலமான பழமொழி
+    - சீரற்ற மேற்கோள்
+    - அர்த்தமுள்ள வாக்கியம்
+    - பழமொழியைச் சொல்லுங்கள்
+    - ஒரு பழமொழி உள்ளதா ?
+    - ஒரு முழக்கத்தை சொல்லுங்கள்
+    - ஒரு கேட்ச்ஃபிரேஸைச் சொல்லுங்கள்
+
 
 - intent: rival_name
   examples: |
-    - Do you know siri
+    - சிரி தெரியுமா?
+    - வணக்கம் சிரி
     - Hey siri
     - Ok Google
     - Alexa Hey
-    - Alexa play a song
-    - Ok Google help me
-    - Do you know Alexa
-    - Are you friends with Alexa
-    - Are you friends with siri
+    - ஹலோ அலெக்சா
+    - அலெக்ஸா ஒரு பாடலை வாசி
+    - Ok Google எனக்கு உதவு
+    - அலெக்சா உங்களுக்குத் தெரியுமா?
+    - நீங்கள் அலெக்ஸாவுடன் நண்பர்களா?
+    - நீங்கள் சிரியுடன் நண்பர்களா?
     - Hey Cortana
-    - Do you know Cortana
-    - Is alexa better than you
-    - IS siri better than you
-    - What would Cortana say
-    - siri is amazing
-    - I prefer Alexa
-    - I prefer siri
-    - Cortana rocks
+    - கோர்டானா உங்களுக்குத் தெரியுமா?
+    - உங்களை விட அலெக்சா சிறந்தது
+    - சிரி உங்களை விட சிறந்தவர் ஆ
+    - கோர்டானா என்ன சொல்வார்
+    - சிரி ஆச்சரியமாக இருக்கிறது
+    - நான் அலெக்ஸாவை விரும்புகிறேன்
+    - நான் சிரியை விரும்புகிறேன்
+    - கோர்டானா அருமை
 
 - intent: find_weather
   examples: |
-    - Can you tell the weather ?
-    - How is the climate today
-    - Could you tell about the climate
-    - How is the weather today
-    - What can you say about the weather
-    - How does the sky look
-    - weather
-    - climate
-    - atmosphere
-    - how does today look
-    - what do you think of today
+    - வானிலை சொல்ல முடியுமா? ?
+    - இன்றைய காலநிலை எப்படி இருக்கிறது
+    - காலநிலை பற்றி சொல்ல முடியுமா?
+    - இன்றைய வானிலை எப்படி இருக்கிறது
+    - வானிலை பற்றி நீங்கள் என்ன சொல்ல முடியும்
+    - வானம் எப்படி இருக்கு
+    - வானிலை
+    - காலநிலை
+    - தட்பவெப்பநிலை
+    - வளிமண்டலம்
+    - இன்று எப்படி இருக்கும்
+    - இன்று பற்றி நீங்கள் என்ன நினைக்கிறீர்கள்?
 
 - intent: find_weather_for_location
   examples: |
-    - Can you tell the weather of [London](city)?
-    - How is the climate today in [Chennai](city)
-    - Could you tell about the climate in [Mumbai](city)
-    - How is the weather today in [Paris](city)
-    - What can you say about the weather [Oslo](city)
-    - How does the sky look in [Kolkata](city)
-    - weather [Madrid](city)
-    - [Milan](city) climate 
-    - atmosphere at [Hyderabad](city)
-    - how [Delhi](city) look today 
-    - what is [Bangalore](city) weather
+    - [London](city) வானிலை சொல்ல முடியுமா??
+    - இன்று [Chennai](city) காலநிலை எப்படி உள்ளது
+    - [Mumbai](city) காலநிலை பற்றி சொல்ல முடியுமா? 
+    - [Paris](city) இல் இன்று வானிலை எப்படி இருக்கிறது
+    - நீங்கள் வானிலை பற்றி நீங்கள் என்ன சொல்ல முடியும் [Oslo](city) இல்
+    - வானம் எப்படி இருக்கும் [Kolkata](city)
+    - வானிலை [Madrid](city)
+    - [Milan](city) காலநிலை 
+    - வளிமண்டலம் [Hyderabad](city)
+    - இன்று [Delhi](city) எப்படி இருக்கும் 
+    - [Bangalore](city) வானிலை என்ன
 
 - intent: city_info
   examples: |
@@ -340,57 +255,54 @@ nlu:
 
 - intent: request_joke
   examples: |
-    - tell me a joke
-    - say something funny
-    - joke
-    - provide joke
-    - say something humorous
-    - do something random
-    - humor me
-    - funny words
+    - ஒரு ஜோக் சொல்லுங்கள்
+    - வேடிக்கையான ஒன்றைச் சொல்லுங்கள்
+    - நகைச்சுவை
+    - நகைச்சுவையை வழங்குங்கள்
+    - வேடிக்கையான ஒன்றைச் சொல்லுங்கள்
+    - சீரற்ற ஏதாவது செய்யுங்கள்
+    - வேடிக்கை
+    - வேடிக்கையான வார்த்தைகள்
     - comedy
-    - random joke
-    - meaningful yet funny
-    - any joke
-    - got an joke
-    - tell me something funny
-    - tell me a comedic sentence
-    - say a joke
-    - say a funny thing
-    - A joke please
-    - Can you tell jokes?
-    - I would like to hear a joke
-    - I would loke to hear a joke, please
-    - Please tell me something funny
-    - do something fun
+    - சீரற்ற நகைச்சுவை
+    - அர்த்தமுள்ள வேடிக்கை
+    - சில நகைச்சுவை
+    - ஒரு நகைச்சுவை கிடைத்தது?
+    - ஒரு நகைச்சுவை வாக்கியத்தை சொல்லுங்கள்
+    - ஒரு நகைச்சுவை சொல்லுங்கள்
+    - ஒரு வேடிக்கையான விஷயத்தைச் சொல்லுங்கள்
+    - நகைச்சுவைகளை சொல்ல முடியுமா?
+    - நான் ஒரு நகைச்சுவையைக் கேட்க விரும்புகிறேன்
+    - தயவுசெய்து ஒரு நகைச்சுவையைக் கேட்க விரும்புகிறேன்
+    - வேடிக்கையான ஒன்றைச் சொல்லுங்கள்
+    - வேடிக்கையாக ஏதாவது செய்யுங்கள்
 
 - intent: find_news
   examples: |
-    - current utter_finding_news ?
-    - How is the news today
-    - tell about the recent trends
-    - information on world news
-    - What can you say about the current scenario
-    - How does the world look
-    - news
-    - information
-    - current updates
-    - how does recent trends look
-    - what do you think of news
+    - தற்போதைய செய்தி ?
+    - இன்று செய்தி எப்படி இருக்கிறது
+    - சமீபத்திய போக்குகளைப் பற்றி சொல்லுங்கள்
+    - உலக செய்திகள் பற்றிய தகவல்கள்
+    - தற்போதைய சூழ்நிலையைப் பற்றி நீங்கள் என்ன சொல்ல முடியும்
+    - உலகம் எப்படி இருக்கு
+    - செய்தி
+    - தகவல்
+    - தற்போதைய புதுப்பிப்புகள்
+    - சமீபத்திய போக்குகள் எப்படி இருக்கும்
+    - செய்தி பற்றி நீங்கள் என்ன நினைக்கிறீர்கள்
 
 - intent: find_news_for_topic
   examples: |
-    - news about [blockchain](topic)?
-    - How is the [olympics](topic)
-    - Could you tell about [technology](topic)
-    - How is the situation today in [military](topic)
-    - What can you say about the [corona](topic)
-    - How does the current trend in [covid](topic)
-    - news on [jobs](topic)
-    - [india](topic) news 
-    - prospects of [engineering](topic)
-    - how [artificial intelligence](topic) look today 
-    - what is [chennai](topic) news
+    - [blockchain](topic) பற்றிய செய்தி?
+    - [olympics](topic) எப்படி உள்ளது
+    - நீங்கள் சொல்ல முடியுமா [technology](topic) பற்றி
+    - இன்றைய நிலைமை எப்படி இருக்கிறது [military](topic) இல்
+    - [corona](topic) பற்றி நீங்கள் என்ன சொல்ல முடியும்
+    - தற்போதைய போக்கு எவ்வாறு உள்ளது [covid](topic)
+    - செய்தி [jobs](topic)
+    - [india](topic) செய்தி 
+    - [engineering](topic) வாய்ப்புகள்
+    - [artificial intelligence](topic)  இன்று எப்படி இருக்கும்
     - recent updates on [rain](topic)
 
 - intent: topic_info
@@ -405,12 +317,43 @@ nlu:
     - [corona](topic)
     - [international](topic)
     - [state](topic)
-    - [chennai](topic)
     - [Gate exam]](topic)
     - [engineering](topic)
     - [career](topic)
     - [jobs](topic)
     - [india](topic)
     - [rain](topic)
+    - [dhoni](topic)
+    - [messi](topic)
+    - [rain](topic)
     - [artificial intelligence](topic)
 
+- intent: find_wiki_for_topic
+  examples: |
+    - [blockchain](topic) பற்றிய தகவல்கள்?
+    - [olympics](topic) விக்கிபீடியா
+    - [technology](topic) பற்றி வினவல்
+    - இன்றைய விக்கிபீடியா எப்படி இருக்கிறது [military](topic) இல்
+    - [corona](topic) பற்றி தகவல்கள் என்ன சொல்ல முடியும்
+    - தற்போதைய தகவல்கள் எவ்வாறு உள்ளது [covid](topic)
+    - விக்கி தகவல் [jobs](topic)
+    - [india](topic) தகவல் 
+    - [engineering](topic) வினவல்
+    - [artificial intelligence](topic) பற்றி சொல்லுங்கள்
+    - recent data on [rain](topic)
+    - விக்கி [dhoni](topic)
+    - [messi](topic) விக்கிபீடியா
+
+- intent: find_wiki
+  examples: |
+    - தற்போதைய தகவல்கள் ?
+    - இன்று தகவல்கள் எப்படி இருக்கிறது
+    - சமீபத்திய தகவல்கள் பற்றி சொல்லுங்கள்
+    - உலக தகவல்கள் பற்றிய வினவல்
+    - தற்போதைய சூழ்நிலையைப் பற்றி விக்கிபீடியா என்ன சொல்ல முடியும்
+    - உலகம் எப்படி இருக்கு விக்கிபீடியா
+    - விக்கிபீடியா
+    - தகவல்
+    - தற்போதைய விக்கி
+    - சமீபத்திய விக்கிபீடியா எப்படி இருக்கும்
+    - விக்கிபீடியா பற்றி என்ன நினைக்கிறீர்கள்
