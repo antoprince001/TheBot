@@ -31,7 +31,7 @@ class ActionRespondQuote(Action):
 
         if response.status_code == 200:
             datum =  json.loads(response.content.decode('utf-8'))
-            quote = datum['content']
+            quote = translate(datum['content'])
         else:
             quote = "யாதும் ஊரே யாவரும் கேளிர்"
         dispatcher.utter_message(text=quote)

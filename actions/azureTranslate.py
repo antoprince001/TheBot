@@ -1,5 +1,5 @@
 import requests, uuid, json
-
+#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
 def translate(text):
     try:
         # Add your subscription key and endpoint
