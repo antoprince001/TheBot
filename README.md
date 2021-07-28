@@ -1,5 +1,5 @@
 # TheBot
-RASA bot developed to be a voice assistant 
+RASA bot developed to be a voice assistant in english and Chat assistant in tamil 
 
 
 Steps to Run : 
