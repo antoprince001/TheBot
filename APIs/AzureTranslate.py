@@ -1,7 +1,7 @@
 import requests, uuid, json
 
 # Add your subscription key and endpoint
-subscription_key = "b2f606035e7a4e5296ff0d6f4136f121"
+subscription_key = "<Fill Key>"
 endpoint = "https://api.cognitive.microsofttranslator.com"
 
 # Add your location, also known as region. The default is global.
