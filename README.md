@@ -5,6 +5,12 @@ It is a contextual assistant that can use Natural Language Processing and Unders
 
 Project Presentation :  https://drive.google.com/file/d/1ywyzdqIwIUX9anLSt0GpgoTxU0b9wJt4/view?usp=sharing
 
+### App Version  
+https://github.com/antoprince001/TheBotApp
+
+### Web Version 
+https://github.com/antoprince001/TheBotWeb
+
 ## System Architecture
 
 ![arch](https://user-images.githubusercontent.com/47826916/128602459-6230671f-a321-4f74-8a93-9bf19c2d041e.JPG)
